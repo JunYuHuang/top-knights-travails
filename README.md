@@ -59,11 +59,11 @@ rspec index.spec.rb
             - `[r - 1, c - 2]`: 2 horiz. lefts -> 1 vert. up
             - `[r + 1, c - 2]`: 2 horiz. lefts -> 1 vert. down
             - `[r - 1, c + 2]`: 2 horiz. rights -> 1 vert. up
-            - `[r + 1, c + 2]`: 2 horiz. rights -> 1 vert. up
-            - `[r - 2, c - 1]`: 2 vert. up -> 1 horiz. left
-            - `[r - 2, c + 1]`: 2 vert. up -> 1 horiz. right
-            - `[r + 2, c - 1]`: 2 vert. down -> 1 horiz. left
-            - `[r + 2, c + 1]`: 2 vert. down -> 1 horiz. right
+            - `[r + 1, c + 2]`: 2 horiz. rights -> 1 vert. down
+            - `[r - 2, c - 1]`: 2 vert. ups -> 1 horiz. left
+            - `[r - 2, c + 1]`: 2 vert. ups -> 1 horiz. right
+            - `[r + 2, c - 1]`: 2 vert. downs -> 1 horiz. left
+            - `[r + 2, c + 1]`: 2 vert. downs -> 1 horiz. right
         - don't need a 2D array or matrix to calculate the path
 - PEDAC: Examples
     - TODO
