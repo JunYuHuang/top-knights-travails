@@ -1,5 +1,9 @@
 # Knights Travails
 
+`knight_moves` is a function that returns an array of chess board cells (integer arrays of size 2) that represents the shortest sequence of cells from a start cell to an end cell that a Knight chess piece can move from and to.
+
+Note that for scenarios where there are multiple solutions for the shortest path (i.e. there are multiple shortest paths that take the same number of steps), this function arbitrarily picks one of the valid solutions for such a scenario.
+
 Below is the console output of a `driver.rb` run.
 
 ```
