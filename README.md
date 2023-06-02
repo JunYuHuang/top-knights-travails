@@ -1,6 +1,16 @@
 # Knights Travails
 
-TODO
+Below is the console output of a `driver.rb` run.
+
+```
+$ ruby driver.rb
+> knight_moves([3, 3],[4, 3])
+=> You made it in 3 moves! Here's your path:
+  [3, 3]
+  [4, 1]
+  [2, 2]
+  [4, 3]
+```
 
 ## Quick Start
 
@@ -12,7 +22,7 @@ TODO
 ### How to run
 
 ```bash
-ruby index.rb
+ruby driver.rb
 ```
 
 ### How to test
@@ -23,10 +33,6 @@ gem install rspec
 
 rspec index.spec.rb
 ```
-
-## Assignment TODOs
-
-- [ ] TODO
 
 ## Planning Notes
 
@@ -65,8 +71,6 @@ rspec index.spec.rb
             - `[r + 2, c - 1]`: 2 vert. downs -> 1 horiz. left
             - `[r + 2, c + 1]`: 2 vert. downs -> 1 horiz. right
         - don't need a 2D array or matrix to calculate the path
-- PEDAC: Examples
-    - TODO
 
 ### General Notes
 
@@ -78,6 +82,7 @@ rspec index.spec.rb
         - `cell` is an int array of size
         - returns true if `cell` is in-bounds else false
     - return empty array if either `start_cell` or `end_cell` are invalid cells
+    - return `[start_cell, end_cell]` if `start_cell` is the same as `end_cell`
     - initialise variables
         - `queue`: an array of array elements initialised with the element `[start_cell, [start_cell]]`
             - each element is an array where
