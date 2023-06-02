@@ -99,7 +99,7 @@ rspec index.spec.rb
     - while `queue` is not empty
         - `cell`, `path` = pop from front of `queue`
         - if `cell` == `end_cell`
-            - return `path` appended with `cell`
+            - return `path`
         - loop thru each array element `diff` in `directions`
             - `next_cell` = `[cell[0] + diff[0], cell[1] + diff[1]]`
             - if `next_cell` is out-of-bounds, continue
